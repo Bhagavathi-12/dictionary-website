@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel='stylesheet' href="/static/style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Dictionary website</h1>
+    <div class="container">
+        <h2>Signup Page</h2>
+        <form action="/signup" method="post">
+            <input type="text" name="username" placeholder="username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already have an account?<span><a href="/login">Login</a></span>
+        </p>
+    </div>
+</body>
+</html>

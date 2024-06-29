@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <link rel='stylesheet' href="/static/styles.css">
+</head>
+<body>
+  <% if (word) { %>
+    <div class="container">
+      <h1>Search Results</h1>
+      <h2>Word: <%= word.word %></h2>
+      <% if (word.phonetic) { %>
+        <p><strong>Phonetic:</strong> <%= word.phonetic %></p>
+      <% } %>
+      <p><strong>Part of Speech:</strong> <%= word.partsOfSpeech %></p>
+      <p><strong>Definition:</strong> <%= word.definition %></p>
+      <% if (word.example) { %>
+        <p><strong>Example:</strong> <%= word.example %></p>
+      <% } %>
+      <a href="">Go back</a>
+    </div>
+  <% } else { %>
+    <p>No word details found</p>
+  <% } %>
+</body>
+</html>
